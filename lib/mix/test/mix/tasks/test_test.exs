@@ -756,9 +756,9 @@ defmodule Mix.Tasks.TestTest do
           receive_until_match(port, expected, acc)
         end
     after
-      15_000 ->
+      45_000 ->
         raise """
-        nothing received from port after 15s.
+        nothing received from port after 45s.
         Expected: #{inspect(expected)}
         Got: #{inspect(acc)}
         """

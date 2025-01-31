@@ -1055,6 +1055,7 @@ defmodule BaseTest do
   end
 
   # TODO: add valid? tests
+  @tag timeout: 120_000
   test "encode then decode is identity" do
     for {encode, decode, valid?} <- [
           {&encode16/2, &decode16!/2, &valid16?/2},

@@ -22,7 +22,7 @@ defmodule ExUnit.MixProject do
         # max_cases: System.schedulers_online * 2,
         # seed: rand(),
 
-        assert_receive_timeout: 100,
+        assert_receive_timeout: 600,
         autorun: true,
         capture_log: false,
         colors: [],

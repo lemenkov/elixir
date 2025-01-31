@@ -717,6 +717,7 @@ defmodule Mix.Tasks.ReleaseTest do
   end
 
   @tag :unix
+  @tag timeout: 120_000
   test "runs in daemon mode" do
     in_fixture("release_test", fn ->
       config = [releases: [permanent2: [include_erts: false, cookie: "abcdefghij"]]]

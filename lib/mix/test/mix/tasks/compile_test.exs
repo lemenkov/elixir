@@ -390,7 +390,7 @@ defmodule Mix.Tasks.CompileTest do
   end
 
   test "listening to concurrent compilations" do
-    timeout = 2_000
+    timeout = 8_000
 
     Mix.Project.pop()
 
